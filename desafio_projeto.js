@@ -1,21 +1,21 @@
-let heroi = "Capitão cueca "
-let XP = 5300
 
-if(XP < 1000){
-console.log("O Herói de nome " + heroi + "está no nível de " + "Ferro");
-}else if(XP >= 1001 && XP <= 2000){
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Bronze");
-}else if(XP >= 2001 && XP <= 5000){
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Prata");
-}else if(XP >= 5001 && XP <= 7000){
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Ouro");
-}else if(XP >= 7001 && XP <= 8000){
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Platina");
-}else if(XP >= 8001 && XP <= 9000){
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Ascendente");
-}else if(XP >= 9001 && XP <= 10000){
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Imortal");
-}else{
-    console.log("O Herói de nome " + heroi + "está no nível de " + "Radiante");
+
+function saldo(vitorias, derrotas){
+   let saldoVitorias = vitorias - derrotas 
+   if(saldoVitorias < 10){
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Ferro");
+    }else if(saldoVitorias >= 11 && saldoVitorias <= 20){
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Bronze");
+    }else if(saldoVitorias >= 21 && saldoVitorias <= 50){
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Prata");
+    }else if(saldoVitorias >= 51 && saldoVitorias <= 80){
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Ouro");
+    }else if(saldoVitorias >= 81 && saldoVitorias <= 90){
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Diamante");
+    }else if(saldoVitorias >= 91 && saldoVitorias <= 100){
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Lendário");
+    }else{
+        console.log("O Herói tem saldo de " + saldoVitorias + " está no nível de " + "Imortal");
 }
-
+}
+saldo(200, 5)
